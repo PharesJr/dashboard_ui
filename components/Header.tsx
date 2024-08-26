@@ -10,8 +10,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -34,7 +32,7 @@ const Header = () => {
       <CommandDemo />
       <div className="flex items-center justify-end">
         <DropdownMenu>
-          <DropdownMenuTrigger>
+          <DropdownMenuTrigger asChild>
             <Button className="relative" variant="outline" size="icon">
               <div
                 className={`absolute -top-2 -right-1 h-3 w-3 rounded-full my-1 ${
